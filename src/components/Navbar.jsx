@@ -5,7 +5,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 function Navbar() {
   const scrollToFeatures = () => {
     scroll.scrollTo('features', {
-      duration: 800,
+      duration: 300,
       delay: 0,
       smooth: 'easeInOutQuart',
     });
@@ -36,7 +36,7 @@ function Navbar() {
             to='header'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             onClick={scrollToFeatures}
           >
             Header
@@ -47,7 +47,7 @@ function Navbar() {
             to='features'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             onClick={scrollToFeatures}
           >
             Feature
@@ -59,7 +59,7 @@ function Navbar() {
             to='about'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             onClick={scrollToFeatures}
           >
             About
@@ -70,7 +70,7 @@ function Navbar() {
             to='commit'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             onClick={scrollToFeatures}
           >
             Our Commitment
@@ -81,7 +81,7 @@ function Navbar() {
             to='feedback'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             onClick={scrollToFeatures}
           >
             Feedback

@@ -5,7 +5,7 @@ import React from 'react';
 function Header() {
   const scrollToFeatures = () => {
     scroll.scrollTo('features', {
-      duration: 800,
+      duration: 300,
       delay: 0,
       smooth: 'easeInOutQuart',
     });
@@ -25,7 +25,7 @@ function Header() {
             to='features'
             spy={true}
             smooth={true}
-            duration={800}
+            duration={300}
             className='header-btn'
             onClick={scrollToFeatures}
           >

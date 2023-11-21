@@ -23,11 +23,11 @@ function Footer() {
               color='light'
               floating
               className='m-1'
-              href='#'
+              href='https://zalo.me/g/dsahny833'
               role='button'
               target='_blank'
             >
-              <MDBIcon fab icon='pinterest' />
+              <MDBIcon fas icon='globe' />
             </MDBBtn>
             <MDBBtn
               outline

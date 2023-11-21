@@ -6,6 +6,7 @@ import FeedBack from './components/Feedback';
 import About from './components/About';
 import Commit from './components/Commit';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <Commit />
       <FeedBack />
+      <Contact />
       <Footer />
     </div>
   );
