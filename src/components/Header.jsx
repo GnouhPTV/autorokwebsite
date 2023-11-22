@@ -1,8 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Link, animateScroll as scroll } from 'react-scroll';
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t } = useTranslation(); // Initialize useTranslation
+
   const scrollToFeatures = () => {
     scroll.scrollTo('features', {
       duration: 300,
@@ -10,16 +13,15 @@ function Header() {
       smooth: 'easeInOutQuart',
     });
   };
+
   return (
     <div id='main'>
       <div className='name'>
-        <h2 style={{ color: 'white' }}>START YOUR FREE TRIAL</h2>
+        <h2 style={{ color: 'white' }}>{t('Header.freeTrial')}</h2>
         <h1>
-          <span>AUTO</span>ROK BOT
+          <span>{t('Header.autoRokBot')}</span>
         </h1>
-        <p className='details'>
-          Experiment with our automated bot and discover more new functions
-        </p>
+        <p className='details'>{t('Header.experimentText')}</p>
         <div className='header-btns'>
           <Link
             to='features'
@@ -29,7 +31,7 @@ function Header() {
             className='header-btn'
             onClick={scrollToFeatures}
           >
-            JOIN US
+            {t('Header.joinUs')}
           </Link>
         </div>
       </div>

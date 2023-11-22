@@ -1,0 +1,64 @@
+{
+  "header": "Header",
+  "feature": "Feature",
+  "about": "About",
+  "commitment": "Our Commitment",
+  "feedback": "Feedback",
+  "Header": {
+    "freeTrial": "START YOUR FREE TRIAL",
+    "autoRokBot": "AUTO ROK BOT",
+    "experimentText": "Experiment with our automated bot and discover more new functions",
+    "joinUs": "JOIN US"
+  },
+  "Feedback": {
+    "title": "F E E D B A C K",
+    "quotes": [
+      {
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "author": "- J Smile"
+      },
+      {
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "author": "- Tomas Ivoška"
+      },
+      {
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "author": "- Hoàng Phạm"
+      },
+      {
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
+        "author": "- Bảo Thái Lương"
+      }
+    ]
+  },
+  "features": {
+    "Feature": "FEATURE",
+    "autoGems": {
+      "title": "AUTO GEMS GATHERING",
+      "button": "Download"
+    },
+    "autoRss": {
+      "title": "AUTO RSS GATHERING",
+      "button": "Download"
+    },
+    "autoTitles": {
+      "title": "AUTO TITLES GRANTING",
+      "button": "Download"
+    },
+    "dataAnalysis": {
+      "title": "KINGDOM DATA ANALYSIS",
+      "button": "Download"
+    }
+  },
+  "About": {
+    "title": "ABOUT BOT",
+    "Features": [
+      "- Automatically march troops to gather gems on the map.",
+      "- The amount of gems gathered is about 5.000-12.000 every day.",
+      "- Multi-character support, the system will automatically switch to other characters to gather resources after the main character is free.",
+      "- Automatically manage the city, including harvesting resources, buying items in the courier station, contributing technology,...",
+      "- Automatically solve captcha when it is detected.",
+      "- Automatically reload on error so it can work 24/7."
+    ]
+  }
+}

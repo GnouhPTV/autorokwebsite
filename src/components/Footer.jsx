@@ -38,7 +38,7 @@ function Footer() {
               role='button'
               target='_blank'
             >
-              <MDBIcon fab icon='google' />
+              <MDBIcon fab icon='discord' />
             </MDBBtn>
             <MDBBtn
               outline

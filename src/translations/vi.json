@@ -1,0 +1,65 @@
+{
+  "header": "Tiêu đề",
+  "feature": "Tính năng",
+  "about": "Về chúng tôi",
+  "commitment": "Cam kết của chúng tôi",
+  "feedback": "Phản hồi",
+  "Header": {
+    "freeTrial": "BẮT ĐẦU DÙNG THỬ MIỄN PHÍ",
+    "autoRokBot": "AUTO ROK BOT",
+    "experimentText": "Thử nghiệm với bot tự động của chúng tôi và khám phá thêm nhiều chức năng mới",
+    "joinUs": "THAM GIA CHÚNG TÔI"
+  },
+  "Feedback": {
+    "title": "Đ Á N H G I Á",
+    "quotes": [
+      {
+        "text": "Lorem Ipsum chỉ là văn bản giả mạo của ngành in và dự trữ. Lorem Ipsum đã là ngành công nghiệp của nó",
+        "author": "- J Smile"
+      },
+      {
+        "text": "Lorem Ipsum chỉ là văn bản giả mạo của ngành in và dự trữ. Lorem Ipsum đã là ngành công nghiệp của nó",
+        "author": "- Tomas Ivoška"
+      },
+      {
+        "text": "Lorem Ipsum chỉ là văn bản giả mạo của ngành in và dự trữ. Lorem Ipsum đã là ngành công nghiệp của nó",
+        "author": "- Hoàng Phạm"
+      },
+      {
+        "text": "Lorem Ipsum chỉ là văn bản giả mạo của ngành in và dự trữ. Lorem Ipsum đã là ngành công nghiệp của nó",
+        "author": "- Bảo Thái Lương"
+      }
+    ]
+  },
+
+  "features": {
+    "Feature": "TÍNH NĂNG",
+    "autoGems": {
+      "title": "TỰ ĐỘNG THU GEMS",
+      "button": "Tải về"
+    },
+    "autoRss": {
+      "title": "TỰ ĐỘNG LẤY RSS",
+      "button": "Tải về"
+    },
+    "autoTitles": {
+      "title": "TỰ ĐỘNG CẤP TITLES",
+      "button": "Tải về"
+    },
+    "dataAnalysis": {
+      "title": "PHÂN TÍCH DỮ LIỆU VƯƠNG QUỐC",
+      "button": "Tải về"
+    }
+  },
+  "About": {
+    "title": "VỀ BOT",
+    "Features": [
+      "- Tự động diễu binh để thu thập ngọc trên bản đồ.",
+      "- Số lượng ngọc được thu thập là khoảng 5.000-12.000 mỗi ngày.",
+      "- Hỗ trợ nhiều nhân vật, hệ thống sẽ tự động chuyển sang nhân vật khác để thu thập tài nguyên sau khi nhân vật chính rảnh rỗi.",
+      "- Tự động quản lý thành phố, bao gồm việc thu hoạch tài nguyên, mua hàng tại trạm chuyển phát, đóng góp công nghệ,...",
+      "- Tự động giải captcha khi phát hiện.",
+      "- Tự động làm mới khi có lỗi để có thể hoạt động 24/7."
+    ]
+  }
+}
