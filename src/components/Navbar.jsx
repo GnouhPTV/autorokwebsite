@@ -71,6 +71,17 @@ function Navbar() {
         </li>
         <li>
           <Link
+            to='service'
+            spy={true}
+            smooth={true}
+            duration={300}
+            onClick={scrollToFeatures}
+          >
+            {t('service')}
+          </Link>
+        </li>
+        <li>
+          <Link
             to='about'
             spy={true}
             smooth={true}

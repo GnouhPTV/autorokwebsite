@@ -34,7 +34,7 @@ function Footer() {
               color='light'
               floating
               className='m-1'
-              href='#'
+              href='https://discord.gg/Mbf2Qj5KsP'
               role='button'
               target='_blank'
             >

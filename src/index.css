@@ -32,7 +32,7 @@ input {
   border: none;
 }
 .logo img {
-  width: 90px;
+  width: 150px;
 }
 #main {
   width: 100%;
@@ -181,20 +181,20 @@ nav .menu-btn,
 }
 
 #features {
-  width: 100%;
-  height: 100vh;
+  width: 100;
   box-sizing: border-box;
   font-family: 'Lato';
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 90px;
   background-color: #fff;
 }
 #features h1 {
   color: #8b008b;
   font-size: 3rem;
 }
+
 .a-container {
   display: flex;
   justify-content: center;
@@ -312,14 +312,14 @@ nav .menu-btn,
 
 #about {
   width: 100%;
-  height: 100vh;
+
   box-sizing: border-box;
   display: flex;
   font-family: 'Lato';
   align-items: center;
   justify-content: space-between;
-  padding: 30% 5% 20% 5%;
-  margin-bottom: 20%;
+
+  margin-bottom: 10%;
   position: relative;
 }
 
@@ -451,6 +451,7 @@ nav .menu-btn,
   #features {
     height: auto;
   }
+
   .a-container {
     flex-wrap: wrap;
   }
@@ -488,7 +489,6 @@ nav .menu-btn,
   }
   #about {
     justify-content: center;
-    padding-top: 0px;
     text-align: center;
 
     margin-top: 0px;
@@ -501,9 +501,6 @@ nav .menu-btn,
   }
   .about-text p {
     width: 100%;
-  }
-  #features {
-    margin-bottom: 100px;
   }
 }
 @media (max-width: 600px) {
@@ -525,7 +522,7 @@ nav .menu-btn,
     padding: 0px 30px;
   }
   .logo img {
-    width: 70px;
+    width: 150px;
   }
   .header-btns {
     margin-left: 0%;
@@ -862,4 +859,217 @@ nav .menu-btn,
   .autorok_commits-container__feature {
     margin: 1rem 0;
   }
+}
+.service {
+  position: relative;
+  padding: 90px 0 40px;
+  background: url(/src/assets/service.jpg) no-repeat center fixed;
+  color: #fff;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+.service::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 66px);
+  height: calc(100% - 66px);
+  border: 3px double #fff;
+}
+.service-img {
+  position: relative;
+  width: 300px;
+  margin: 0 auto 50px;
+  display: block;
+  max-width: 100%;
+}
+.main-container {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.service-item {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
+  padding: 63px;
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 66px);
+  height: calc(100% - 66px);
+  border: 3px double #fff;
+}
+.service-item h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.service-item h2 span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.service-item ul {
+  list-style: none;
+  position: relative;
+}
+.service-item ul li span {
+  font-size: 18px;
+}
+.service-item ul li p {
+  opacity: 70%;
+}
+
+.service-item2 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
+  padding: 63px;
+  background-color: rgb(0 0 0 / 50%);
+  margin-left: 50px;
+}
+.service-item2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 66px);
+  height: calc(100% - 66px);
+  border: 3px double #fff;
+}
+.service-item2 h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.service-item2 h2 span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.service-item2 ul {
+  list-style: none;
+  position: relative;
+}
+.service-item2 ul li span {
+  font-size: 18px;
+}
+.service-item2 ul li p {
+  opacity: 70%;
+}
+
+.clear {
+  font-size: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  width: 0;
+  overflow: hidden;
+  zoom: 1;
+}
+.clear:before,
+.clear::after {
+  content: '\0020';
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clear::after {
+  clear: both;
+}
+
+.service-item3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 66px);
+  height: calc(100% - 66px);
+  border: 3px double #fff;
+}
+.service-item3 {
+  box-sizing: border-box;
+  position: relative;
+  float: none;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 63px;
+  background-color: rgb(0 0 0 / 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item3 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Thêm khoảng cách giữa hai bảng */
+}
+
+.service-item3 th,
+.service-item3 td {
+  border: 1px solid #fff;
+  padding: 8px;
+  text-align: left;
+}
+
+.service-item3 th {
+  background-color: #333;
+  color: #fff;
+}
+
+.service-item3 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item3 ul li {
+  margin-bottom: 5px;
+  display: flex; /* Thêm dòng này để sử dụng flexbox */
+  align-items: center; /* Để giữ nội dung ngang hàng theo chiều dọc */
+}
+
+.service-item3 ul li span,
+.service-item3 ul li p {
+  flex: 1;
+  margin: 0;
+}
+
+.service-item3 ul li p {
+  opacity: 70%;
+  flex-shrink: 0;
+}
+
+.service-item3 ul li ul {
+  /* Thêm dòng này để cả "Character" và "Price" đều sử dụng flexbox */
+  display: flex;
+  flex-direction: column; /* Hiển thị theo chiều dọc */
+  flex: 1;
+  margin-left: 10px; /* Khoảng cách giữa "Character" và "Price" */
 }

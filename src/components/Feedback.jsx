@@ -14,7 +14,7 @@ export default function Feedback() {
   return (
     <div id='feedback' className='feedback'>
       <Container>
-        <div className='main-title' style={{ marginBottom: '50px' }}>
+        <div className='main-title'>
           <h2 className='main-title-inner'>{t('Feedback.title')}</h2>
         </div>
         <Swiper

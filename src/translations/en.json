@@ -1,6 +1,7 @@
 {
   "header": "Header",
   "feature": "Feature",
+  "service": "Service",
   "about": "About",
   "commitment": "Our Commitment",
   "feedback": "Feedback",
@@ -50,6 +51,7 @@
       "button": "Download"
     }
   },
+
   "About": {
     "title": "ABOUT BOT",
     "Features": [
