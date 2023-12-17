@@ -1,18 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo.png';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import { useTranslation } from 'react-i18next';
-import { MDBBtn, MDBIcon, MDBCollapse } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
-  const scrollToFeatures = () => {
-    scroll.scrollTo('features', {
-      duration: 300,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-    });
-  };
+
   const [nav, setNav] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
@@ -25,11 +19,11 @@ function Navbar() {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
+    window.addEventListener("scroll", changeBackground);
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', changeBackground);
+      window.removeEventListener("scroll", changeBackground);
     };
   }, []);
 
@@ -38,98 +32,45 @@ function Navbar() {
     setIsLanguageDropdownOpen(false);
   };
   return (
-    <nav className={nav ? 'nav active' : 'nav'}>
-      <Link to='#' className='logo'>
-        <img src={logo} alt='' />
+    <nav className={nav ? "nav active" : "nav"}>
+      <Link to="#" className="logo">
+        <img src={logo} alt="" />
       </Link>
-      <input className='menu-btn' type='checkbox' id='menu-btn' />
-      <label className='menu-icon' htmlFor='menu-btn'>
-        <span className='nav-icon'></span>
+      <input className="menu-btn" type="checkbox" id="menu-btn" />
+      <label className="menu-icon" htmlFor="menu-btn">
+        <span className="nav-icon"></span>
       </label>
-      <ul className='menu'>
+      <ul className="menu">
         <li>
-          <Link
-            to='header'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('header')}
-          </Link>
+          <Link to="/home">{t("Home")}</Link>
         </li>
         <li>
-          <Link
-            to='features'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('feature')}
-          </Link>
+          <Link to="/features-services">{t("features & services")}</Link>
         </li>
         <li>
-          <Link
-            to='service'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('service')}
-          </Link>
+          <Link to="/document">{t("documents")}</Link>
         </li>
         <li>
-          <Link
-            to='about'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('about')}
-          </Link>
+          <Link to="/other">{t("other")}</Link>
         </li>
-        <li>
-          <Link
-            to='commit'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('commitment')}
-          </Link>
-        </li>
-        <li>
-          <Link
-            to='feedback'
-            spy={true}
-            smooth={true}
-            duration={300}
-            onClick={scrollToFeatures}
-          >
-            {t('feedback')}
-          </Link>
-        </li>
+        
         <li>
           <MDBBtn
             outline
-            color='light'
-            className='m-1'
+            color="light"
+            className="m-1"
             onClick={() => setIsLanguageDropdownOpen(!isLanguageDropdownOpen)}
           >
-            <MDBIcon icon='globe' />
+            <MDBIcon icon="globe" />
           </MDBBtn>
           {isLanguageDropdownOpen && (
-            <ul className='language-dropdown'>
+            <ul className="language-dropdown">
               <li>
                 <MDBBtn
                   outline
-                  color='light'
-                  className='m-1'
-                  onClick={() => switchLanguage('en')}
+                  color="light"
+                  className="m-1"
+                  onClick={() => switchLanguage("en")}
                 >
                   Eng
                 </MDBBtn>
@@ -137,9 +78,9 @@ function Navbar() {
               <li>
                 <MDBBtn
                   outline
-                  color='light'
-                  className='m-1'
-                  onClick={() => switchLanguage('vi')}
+                  color="light"
+                  className="m-1"
+                  onClick={() => switchLanguage("vi")}
                 >
                   Vie
                 </MDBBtn>
