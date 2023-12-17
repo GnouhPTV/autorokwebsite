@@ -1,14 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import i18n from './i18n';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import Routers from "./Router/Routers";
+import "./index.css";
+import Navbar from "./components/Navbar";
 
-ReactDOM.render(
-  <>
-    <App />
-  </>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <Routers />
+      {/* <App /> */}
+    </BrowserRouter>
+  </React.StrictMode>
 );

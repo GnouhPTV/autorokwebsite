@@ -11,10 +11,13 @@ import Service from './components/Service';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <Navbar />
+
       <Header />
-      <Feature />
+      {/* <div style={{ border: "10px solid #b1154a" }}>
+        <Feature />
+      </div> */}
       <Service />
       <About />
       <FeedBack />
