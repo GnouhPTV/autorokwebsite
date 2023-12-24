@@ -47,13 +47,23 @@ function Navbar() {
         <li>
           <Link to="/features-services">{t("features & services")}</Link>
         </li>
+
+        {/*  */}
+
+        <li>
+          <Link to="/intro">{t("Introduction")}</Link>
+        </li>
+
         <li>
           <Link to="/document">{t("documents")}</Link>
         </li>
+
+        {/*  */}
+
         <li>
           <Link to="/other">{t("other")}</Link>
         </li>
-        
+
         <li>
           <MDBBtn
             outline

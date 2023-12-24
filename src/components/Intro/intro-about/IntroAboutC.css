@@ -1,0 +1,54 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#about-item {
+  max-width: 1000px;
+  height: 400px;
+  cursor: pointer;
+  background-image: url("../../../assets/navia.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-position: right center;
+}
+#about-content {
+  position: absolute;
+  top: -36px;
+  padding: 46px;
+  width: 448px;
+  height: 398px;
+  background-image: url("../../../assets/khungcontent.png");
+}
+
+
+#about-item-right {
+  max-width: 1000px;
+  height: 400px;
+  cursor: pointer;
+  background-image: url("../../../assets/navia.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-position: left center;
+}
+#about-content-right {
+  position: absolute;
+  top: -36px;
+  padding: 46px;
+  width: 448px;
+  height: 398px;
+  background-image: url("../../../assets/khungcontent.png");
+  right: -14px;
+}
