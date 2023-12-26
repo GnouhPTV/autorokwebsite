@@ -4,6 +4,7 @@ import Intro from "../Page/Intro";
 import SerFe from "../Page/SerFe";
 import Header from "../components/Header";
 import Contact from "../components/Contact";
+import Other from "../Page/Other";
 
 const Routers = () => {
   return (
@@ -14,6 +15,7 @@ const Routers = () => {
       <Route path="/features-services" element={<SerFe />} />
       <Route path="/intro" element={<Intro />} />
       {/* <Route path="/contact" element={<Contact />} /> */}
+      <Route path="/other" element={<Other />} />
     </Routes>
   );
 };

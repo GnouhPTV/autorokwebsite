@@ -38,7 +38,7 @@ const IntroVideo = () => {
     <>
       <div id="video">
         <div className="horizontal-line"></div>
-        <h1>Video</h1>
+        <h1 style={{ color: "#8b008b" }}>Video</h1>
         <div className="horizontal-line"></div>
       </div>
 

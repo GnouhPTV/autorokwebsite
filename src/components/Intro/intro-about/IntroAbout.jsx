@@ -6,7 +6,10 @@ const IntroAbout = () => {
   return (
     <>
       <div className="about">
-        <h1> About</h1>
+        <div className="horizontal-line"></div>
+
+        <h1 style={{ color: "#8b008b" }}> About</h1>
+        <div className="horizontal-line"></div>
       </div>
 
       <div id="about-item">
@@ -63,6 +66,20 @@ const IntroAbout = () => {
           <p>
             We encourage creativity and flexibility in every aspect. This helps
             us quickly adapt to challenges and come up with unique solutions.
+          </p>
+        </div>
+      </div>
+      {/*  */}
+      {/*  */}
+      <div id="about-item-right">
+        <div id="about-content-right">
+          <h2>Quality standards</h2>
+          <p>
+            Quality is our focus. We always do our best to ensure that all
+            products and services we provide are stable and most effective. We
+            are proud of our passionate team of teammates and are willing to
+            cooperate with you to provide the most optimal solutions. Thank you
+            for coming to us!
           </p>
         </div>
       </div>
