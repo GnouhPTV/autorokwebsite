@@ -1,0 +1,35 @@
+#intro {
+  max-width: 100%;
+  height: 700px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("../../../assets/banner.jpg");
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.intro-image {
+  width: 100%;
+  text-align: justify; 
+  /* border: 2px solid #ff0000; */
+  padding: 10px; 
+}
+
+
+.intro-image h1 {
+  text-align: center; 
+  font-weight: 700;
+  color: #00BFFF;
+  padding-top: 3ch;
+}
+
+.intro-image p {
+  margin: 0; 
+  text-align: center;
+  padding: 0 45vb 0 45vb;
+  font-size: 1.2em;
+}
