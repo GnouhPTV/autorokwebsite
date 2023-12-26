@@ -33,6 +33,40 @@ const IntroAbout = () => {
           </p>
         </div>
       </div>
+      {/*  */}
+      <div id="about-item">
+        <div id="about-content">
+          <h2>Commitment to safety</h2>
+          <p>
+            Our team is always active 24/24, always updating tools regularly,
+            and the servers are managed by loyal and reputable collaborators,
+            ensuring maximum safety for your accounts. Customers trust us.
+          </p>
+        </div>
+      </div>
+      {/*  */}
+      <div id="about-item-right">
+        <div id="about-content-right">
+          <h2>Teamwork</h2>
+          <p>
+            We believe in teamwork and mutual support to achieve common goals.
+            Here, every opinion is respected and every member has the
+            opportunity to develop themselves.
+          </p>
+        </div>
+      </div>
+      {/*  */}
+      {/*  */}
+      <div id="about-item">
+        <div id="about-content">
+          <h2>Creativity and Flexibility</h2>
+          <p>
+            We encourage creativity and flexibility in every aspect. This helps
+            us quickly adapt to challenges and come up with unique solutions.
+          </p>
+        </div>
+      </div>
+      {/*  */}
     </>
   );
 }

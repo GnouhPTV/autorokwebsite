@@ -54,9 +54,9 @@ function Navbar() {
           <Link to="/intro">{t("Introduction")}</Link>
         </li>
 
-        <li>
-          <Link to="/document">{t("documents")}</Link>
-        </li>
+        {/* <li>
+          <Link to="/contact">{t("contact")}</Link>
+        </li> */}
 
         {/*  */}
 

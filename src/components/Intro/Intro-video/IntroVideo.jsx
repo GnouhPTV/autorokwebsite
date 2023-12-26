@@ -13,13 +13,13 @@ import { FreeMode, Pagination } from "swiper/modules";
 const IntroVideo = () => {
   const videos = [
     "https://www.youtube.com/embed/Dn_77i7BL20?si=NFZi3mnOE9mm47cP",
-    "https://www.youtube.com/embed/xRTOxR3b-jE?si=w-vjrbVAmVfO5Poz",
-    "https://www.youtube.com/embed/NcyDxazsMWY?si=6ufVQ5qM3YeM3UMj",
+    "https://www.youtube.com/embed/0GZoYuFXObw?si=JKzUyd6Sz32LcUQP",
+    "https://www.youtube.com/embed/e86K7Esgr6A?si=hK_IDz26J5PtxgDr",
   ];
   const thumbnails = [
     require("../../../assets/about.jpg"), // Đường dẫn tới thumbnail 1 trong assets
-    require("../../../assets/navia.jpg"),
-    require("../../../assets/about.jpg"),
+    require("../../../assets/ảnh2.jpg"),
+    require("../../../assets/IntroImage.jpg"),
   ];
 
   const [selectedThumbnailIndex, setSelectedThumbnailIndex] = useState(null);
@@ -50,22 +50,24 @@ const IntroVideo = () => {
           pagination={{
             clickable: true,
           }}
-          // loop={true}
+          loop={true}
           navigation={{ nextEl: false, prevEl: false }}
-          modules={[FreeMode, Pagination]}
+          modules={[FreeMode]}
           // allowTouchMove={true}
           centeredSlides={true}
         >
-          {thumbnails.map((thumbnail, index) => (
-            <SwiperSlide className="swiper-slide" key={index}>
-              <img
-                style={{ width: "464px", height: "300px", cursor: "pointer" }}
-                src={thumbnail}
-                alt={`Thumbnail ${index + 1}`}
-                onClick={() => handleThumbnailClick(index)}
-              />
-            </SwiperSlide>
-          ))}
+          <Container>
+            {thumbnails.map((thumbnail, index) => (
+              <SwiperSlide className="swiper-slide" key={index}>
+                <img
+                  style={{ width: "464px", height: "300px", cursor: "pointer" }}
+                  src={thumbnail}
+                  alt={`Thumbnail ${index + 1}`}
+                  onClick={() => handleThumbnailClick(index)}
+                />
+              </SwiperSlide>
+            ))}
+          </Container>
         </Swiper>
 
         <Modal show={showModal} onHide={handleCloseModal} size="xl">
@@ -92,6 +94,7 @@ const IntroVideo = () => {
           </Row>
         </Modal>
       </div>
+      {/* </Container> */}
     </>
   );
 };
