@@ -1,6 +1,5 @@
 import React from 'react'
 import "../intro-about/IntroAboutC.css"
-import { Container } from 'react-bootstrap';
 
 const IntroAbout = () => {
   return (
