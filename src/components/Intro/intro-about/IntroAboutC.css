@@ -5,11 +5,11 @@
   margin-bottom: 50px;
 }
 
-#about-item {
+#about-item1 {
   max-width: 1000px;
   height: 400px;
   cursor: pointer;
-  background-image: url("../../../assets/navia.jpg");
+  background-image: url("../../../assets/mission.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   z-index: 0;
@@ -19,7 +19,7 @@
   margin-bottom: 50px;
   background-position: right center;
 }
-#about-content {
+#about-content1 {
   position: absolute;
   top: -36px;
   padding: 46px;
@@ -29,11 +29,11 @@
 }
 
 
-#about-item-right {
+#about-item-right1 {
   max-width: 1000px;
   height: 400px;
   cursor: pointer;
-  background-image: url("../../../assets/navia.jpg");
+  background-image: url("../../../assets/Diversity\ and\ Professionalism.jpg");
   background-size: auto 100%;
   background-repeat: no-repeat;
   z-index: 0;
@@ -43,7 +43,8 @@
   margin-bottom: 50px;
   background-position: left center;
 }
-#about-content-right {
+
+#about-content-right1 {
   position: absolute;
   top: -36px;
   padding: 46px;
@@ -51,4 +52,73 @@
   height: 398px;
   background-image: url("../../../assets/khungcontent.png");
   right: -14px;
+}
+
+#about-item2 {
+  max-width: 1000px;
+  height: 400px;
+  cursor: pointer;
+  background-image: url("../../../assets/Commitment\ to\ safety.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-position: right center;
+}
+#about-content2 {
+  position: absolute;
+  top: -36px;
+  padding: 46px;
+  width: 448px;
+  height: 398px;
+  background-image: url("../../../assets/khungcontent.png");
+}
+#about-item-right2 {
+  max-width: 1000px;
+  height: 400px;
+  cursor: pointer;
+  background-image: url("../../../assets/teamwork.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-position: left center;
+}
+
+#about-content-right2 {
+  position: absolute;
+  top: -36px;
+  padding: 46px;
+  width: 448px;
+  height: 398px;
+  background-image: url("../../../assets/khungcontent.png");
+  right: -14px;
+}
+#about-item3 {
+  max-width: 1000px;
+  height: 400px;
+  cursor: pointer;
+  background-image: url("../../../assets/Creativity\ and\ Flexibility.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  margin-bottom: auto;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-position: right center;
+}
+#about-content3 {
+  position: absolute;
+  top: -36px;
+  padding: 46px;
+  width: 448px;
+  height: 398px;
+  background-image: url("../../../assets/khungcontent.png");
 }

@@ -10,14 +10,14 @@ function Featurebox(props) {
         <img src={props.image} alt='' />
       </div>
       <div className='a-b-text'>
-        <h2>{t(`features.${props.featureKey}.title`)}</h2>
+        <h2>{t(`${props.featureKey}`)}</h2>
         <a
           href={props.link}
           className='btn btn-primary mt-3 mb-3'
           target='_blank'
           rel='noopener noreferrer'
         >
-          {t(`features.${props.featureKey}.button`)}
+          DOWNLOAD
         </a>
       </div>
     </div>

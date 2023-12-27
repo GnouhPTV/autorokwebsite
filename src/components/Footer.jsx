@@ -1,5 +1,6 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBIcon, MDBBtn } from 'mdb-react-ui-kit';
+import { SiZalo } from "react-icons/si";
 
 function Footer() {
   return (
@@ -23,23 +24,24 @@ function Footer() {
               color="light"
               floating
               className="m-1"
-              href="https://zalo.me/g/dsahny833"
-              role="button"
-              target="_blank"
-            >
-              <MDBIcon fas icon="globe" />
-            </MDBBtn>
-            <MDBBtn
-              outline
-              color="light"
-              floating
-              className="m-1"
               href="https://discord.gg/Mbf2Qj5KsP"
               role="button"
               target="_blank"
             >
               <MDBIcon fab icon="discord" />
             </MDBBtn>
+            <MDBBtn
+              outline
+              color="light"
+              floating
+              className="m-1"
+              href="https://zalo.me/g/dsahny833"
+              role="button"
+              target="_blank"
+            >
+              <SiZalo />
+            </MDBBtn>
+            
           </section>
         </MDBContainer>
 
