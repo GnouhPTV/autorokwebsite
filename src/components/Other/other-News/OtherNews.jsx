@@ -29,7 +29,7 @@ const OtherNews = () => {
                 Merry Christmas
               </h2>
               <p>
-                Governors, may this Christmas be a time of togetherness,
+                Governors, may this Christmas be a time of togetherness, 
                 laughter, and creating beautiful memories that will be treasured
                 for a lifetime. Wishing you all a truly magical holiday season!{" "}
               </p>
