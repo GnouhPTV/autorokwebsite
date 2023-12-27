@@ -103,7 +103,7 @@ function Header() {
                   >
                     - Thay vì thời gian bạn phải tự tay thao tác các hoạt động
                     lặp đi lặp lại liên tục trên trò chơi, thì bây giờ tự động
-                    hóa sẽ giúp bạn làm tất cả những hạot động đó.
+                    hóa sẽ giúp bạn làm tất cả những hoạt động đó.
                     <br />- Tiết kiệm thời gian, giúp bạn có thêm nhiều thời
                     gian cho công việc và gia đình.
                   </p>
