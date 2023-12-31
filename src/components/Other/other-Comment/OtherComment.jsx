@@ -69,7 +69,7 @@ function OtherComment() {
           modules={[Pagination, Autoplay]} // Chắc chắn rằng bạn đã viết "Pagination" viết hoa ở đây
           centeredSlides={true}
           autoplay={{
-            delay: 100000,
+            delay: 1000,
             disableOnInteraction: false,
           }}
           speed={2500}
