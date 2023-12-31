@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/autorokwebsite/static/css/main.2ac51db0.css",
+    "main.css": "/autorokwebsite/static/css/main.1bf85fa5.css",
     "main.js": "/autorokwebsite/static/js/main.680e7212.js",
     "static/media/Feedback.png": "/autorokwebsite/static/media/Feedback.594b729a5f7fdad89777.png",
     "static/media/promotion.png": "/autorokwebsite/static/media/promotion.9b3fe50220b8f4edf4f6.png",
@@ -38,11 +38,11 @@
     "static/media/4.svg": "/autorokwebsite/static/media/4.5c8a6504bc11ff93f23668d68aa3d7a8.svg",
     "static/media/1.svg": "/autorokwebsite/static/media/1.e3d3ace9aedd6ee9e99b924196881e4c.svg",
     "index.html": "/autorokwebsite/index.html",
-    "main.2ac51db0.css.map": "/autorokwebsite/static/css/main.2ac51db0.css.map",
+    "main.1bf85fa5.css.map": "/autorokwebsite/static/css/main.1bf85fa5.css.map",
     "main.680e7212.js.map": "/autorokwebsite/static/js/main.680e7212.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ac51db0.css",
+    "static/css/main.1bf85fa5.css",
     "static/js/main.680e7212.js"
   ]
 }
