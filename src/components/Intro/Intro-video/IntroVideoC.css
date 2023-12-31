@@ -7,23 +7,22 @@
 
 .container-video{
     z-index: 0;
-
 }
 .swiper {
-  width: 100%;
   height: 50vh;
-
 }
 
 .swiper-slide {
-  text-align: center;
-  background: #e9e9e900;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* max-width: 500px; */
+
+    margin-right: 10px; 
 }
+
+.swiper-slide img {
+  width: 100%;
+  height: 85%;
+  object-fit: cover; 
+}
+
 
 .modal-content {
    background-color: rgba(0, 0, 0, 0);
@@ -31,6 +30,14 @@
 .horizontal-line {
   flex-grow: 1;
   height: 2px;
-  background-color: #000; /* Màu của đường ngang */
-  margin: 0 120px; /* Khoảng cách giữa đường ngang và chữ "Video" */
+  background-color: #000; 
+  margin: 0 120px; 
+}
+
+
+.play-button {
+  width: 60px; /* Điều chỉnh kích thước theo ý muốn của bạn */
+  height: 60px;
+  background: url('../../../assets/playbutton.png'); 
+  background-size: cover;
 }
