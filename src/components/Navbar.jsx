@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import logo from "../assets/logo.png";
+import { MDBFooter, MDBContainer, MDBIcon } from "mdb-react-ui-kit";
+
 
 function Navbar() {
   const { t, i18n } = useTranslation();
 
   const [nav, setNav] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+  const [isOtherDropdownOpen, setIsOtherDropdownOpen] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 50) {
@@ -34,16 +36,16 @@ function Navbar() {
 
   return (
     <nav className={nav ? "nav active" : "nav"}>
-      <Link to="/" className="logo">
-        <img src={logo} alt="" />
+      <Link to="/" className="logo ">
+        <img src={logo} alt="" className="logo-img" />
       </Link>
 
       <input className="menu-btn" type="checkbox" id="menu-btn" />
       <label className="menu-icon" htmlFor="menu-btn">
         <span className="nav-icon"></span>
       </label>
-
-      <ul className="menu">
+      {/*  */}
+      <ul className="menu m-2">
         <li>
           <Link to="/home">{t("Home")}</Link>
         </li>
@@ -55,20 +57,23 @@ function Navbar() {
 
         <li>
           <Link to="/intro">{t("Introduction")}</Link>
-          <Link to="/intro">{t("Introduction")}</Link>
         </li>
-
-        {/* <li>
-          <Link to="/contact">{t("contact")}</Link>
-        </li> */}
-
         {/*  */}
+        <li className="dropdown-wrapper">
+          <div className="other-link">
+            <Link>
+              {t("other")}{" "}
+              <MDBIcon icon="chevron-down" className="dropdown-icon" />{" "}
+            </Link>
+          </div>
+          <div className="dropdown-content">
+            <Link to="/other-new">{t("News")}</Link>
+            <Link to="/policy">{t("Policy")}</Link>
 
-        <li>
-          <Link to="/other">{t("other")}</Link>
+            <Link to="/promotion">{t("Promotion")}</Link>
+          </div>
         </li>
 
-        
         {/* <li>
           <MDBBtn
             outline

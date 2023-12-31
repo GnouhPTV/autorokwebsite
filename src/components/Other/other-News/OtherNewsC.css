@@ -1,17 +1,15 @@
-.News {
-  /* width: 100; */
+#News {
   padding-top: 90px;
   background-color: #fff;
-  margin: 0 30px;
 }
 
-.title-News {
-  background: linear-gradient(66.04deg, #fff7f7 0%, #fff5ff 100%);
+.title {
+  /* background: linear-gradient(66.04deg, #fff7f7 0%, #fff5ff 100%); */
   border-bottom: 2px solid #8b008b;
   height: 43px;
 }
 
-.title-News h3 {
+.title h3 {
   color: #fff;
   font-size: 22px;
   background: #8b008b;
@@ -31,7 +29,7 @@
 }
 
 .news-items {
-  padding: 16px 0;
+  padding: 10px 0;
   border-bottom: 1px solid #e6e8e9;
   /* display: flex; */
   align-items: center;

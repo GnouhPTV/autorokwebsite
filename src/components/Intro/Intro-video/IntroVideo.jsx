@@ -8,17 +8,21 @@ import { Col, Container, Modal, Row } from "react-bootstrap";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+
+import { FreeMode, Pagination, Autoplay  } from "swiper/modules";
 
 const IntroVideo = () => {
   const videos = [
     "https://www.youtube.com/embed/Dn_77i7BL20?si=NFZi3mnOE9mm47cP",
     "https://www.youtube.com/embed/0GZoYuFXObw?si=JKzUyd6Sz32LcUQP",
     "https://www.youtube.com/embed/e86K7Esgr6A?si=hK_IDz26J5PtxgDr",
+    "https://www.youtube.com/embed/e86K7Esgr6A?si=hK_IDz26J5PtxgDr",
   ];
   const thumbnails = [
-    require("../../../assets/about.jpg"), // Đường dẫn tới thumbnail 1 trong assets
+    require("../../../assets/about.jpg"),
     require("../../../assets/ảnh2.jpg"),
+    require("../../../assets/IntroImage.jpg"),
     require("../../../assets/IntroImage.jpg"),
   ];
 
@@ -45,22 +49,25 @@ const IntroVideo = () => {
       <div className="container-video">
         <Swiper
           className="swiper"
-          spaceBetween={1}
-          slidesPerView={3} // Hiển thị 1 slide tại mỗi lần
+          spaceBetween={10}
+          slidesPerView={3}
           pagination={{
             clickable: true,
           }}
           loop={true}
           navigation={{ nextEl: false, prevEl: false }}
-          modules={[FreeMode]}
-          // allowTouchMove={true}
+          modules={[ Pagination, Autoplay]} // Chắc chắn rằng bạn đã viết "Pagination" viết hoa ở đây
           centeredSlides={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          speed={2500}
         >
           <Container>
             {thumbnails.map((thumbnail, index) => (
               <SwiperSlide className="swiper-slide" key={index}>
                 <img
-                  style={{ width: "464px", height: "300px", cursor: "pointer" }}
                   src={thumbnail}
                   alt={`Thumbnail ${index + 1}`}
                   onClick={() => handleThumbnailClick(index)}
@@ -69,9 +76,8 @@ const IntroVideo = () => {
             ))}
           </Container>
         </Swiper>
-
+        {/*  */}
         <Modal show={showModal} onHide={handleCloseModal} size="xl">
-          {/* <Modal.Header></Modal.Header> */}
           <Row>
             <Col lg="11" style={{ margin: "0", padding: "0" }}>
               <iframe
@@ -94,7 +100,6 @@ const IntroVideo = () => {
           </Row>
         </Modal>
       </div>
-      {/* </Container> */}
     </>
   );
 };

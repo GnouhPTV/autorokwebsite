@@ -1,0 +1,43 @@
+#Policy {
+  padding-top: 90px;
+  background-color: #fff;
+  background-image: url("../../../assets/promotion.png");
+}
+
+
+#table-Policy{
+    width: 961px;
+    height: 1780px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    background-image: url("../../../assets/table.png");
+
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* Increase the scale on hover */
+}
+
+.hover-zoom {
+  max-width: 100%; 
+  max-height: 100%;
+
+/* width: 300px;
+height: 250px; */
+}
+
+
+.news-card {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  width: 630px; 
+  height: 100%; 
+  overflow: hidden; 
+  border-radius: 15px; 
+}
