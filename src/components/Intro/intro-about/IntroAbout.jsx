@@ -1,90 +1,75 @@
-import React from 'react'
-import "../intro-about/IntroAboutC.css"
+import React from "react";
+import "../intro-about/IntroAboutC.css";
+import { Container } from "react-bootstrap";
 
 const IntroAbout = () => {
   return (
     <>
       <div className="about">
-        <div className="horizontal-line"></div>
-
-        <h1 style={{ color: "#8b008b" }}> About</h1>
-        <div className="horizontal-line"></div>
+        <h1>VỀ CHÚNG TÔI</h1>
       </div>
 
-      <div id="about-item">
-        <div id="about-content">
-          <h2>Mission</h2>
+      <div id="about-item1">
+        <div id="about-content1">
+          <h2>Nhiệm vụ</h2>
           <p>
-            We want to develop and bring products to the world so that everyone
-            can access the benefits of our tools. Thereby making people less
-            bored when playing the game because now the difference between the
-            boss and us is getting closer and closer. To sum up, the advent of
-            automation is a positive thing for everyone (including game
-            publishers and game players).
+            Chúng tôi muốn phát triển và đưa sản phẩm ra thế giới để mọi người
+            có thể tiếp cận những lợi ích từ công cụ của chúng tôi. Qua đó khiến
+            mọi người bớt nhàm chán khi chơi game vì giờ đây khoảng cách giữa
+            sếp và chúng ta ngày càng gần hơn. Tóm lại, sự ra đời của tự động
+            hóa là một điều tích cực đối với tất cả mọi người (bao gồm cả nhà
+            phát hành trò chơi và người chơi trò chơi).
           </p>
         </div>
       </div>
       {/*  */}
-      <div id="about-item-right">
-        <div id="about-content-right">
-          <h2>Diversity and Professionalism</h2>
+      <div id="about-item-right1">
+        <div id="about-content-right1">
+          <h2>Sự đa dạng và chuyên nghiệp</h2>
           <p>
-            We have a team of extremely dynamic and knowledgeable collaborators
-            about games, so most of us can meet all the requirements that
-            customers set out.
+            Chúng tôi có đội ngũ cộng tác viên cực kỳ năng động và am hiểu về
+            game nên hầu hết chúng tôi đều có thể đáp ứng được mọi yêu cầu mà
+            khách hàng đặt ra.
           </p>
         </div>
       </div>
       {/*  */}
-      <div id="about-item">
-        <div id="about-content">
-          <h2>Commitment to safety</h2>
+      <div id="about-item2">
+        <div id="about-content2">
+          <h2>Cam kết an toàn</h2>
           <p>
-            Our team is always active 24/24, always updating tools regularly,
-            and the servers are managed by loyal and reputable collaborators,
-            ensuring maximum safety for your accounts. Customers trust us.
+            Đội ngũ của chúng tôi luôn hoạt động 24/24, luôn cập nhật công cụ
+            thường xuyên và máy chủ được quản lý bởi các cộng tác viên trung
+            thành và uy tín, đảm bảo an toàn tối đa cho tài khoản của bạn. Khách
+            hàng tin tưởng chúng tôi.
           </p>
         </div>
       </div>
       {/*  */}
-      <div id="about-item-right">
-        <div id="about-content-right">
-          <h2>Teamwork</h2>
+      <div id="about-item-right2">
+        <div id="about-content-right2">
+          <h2>Đội ngũ làm việc</h2>
           <p>
-            We believe in teamwork and mutual support to achieve common goals.
-            Here, every opinion is respected and every member has the
-            opportunity to develop themselves.
+            Chúng tôi tin vào tinh thần đồng đội và hỗ trợ lẫn nhau để đạt được
+            mục tiêu chung. Ở đây mọi ý kiến đều được tôn trọng và mọi thành
+            viên đều có quyền cơ hội phát triển bản thân.
           </p>
         </div>
       </div>
       {/*  */}
-      {/*  */}
-      <div id="about-item">
-        <div id="about-content">
-          <h2>Creativity and Flexibility</h2>
+      <div id="about-item3">
+        <div id="about-content3">
+          <h2>Sáng tạo và linh hoạt</h2>
           <p>
-            We encourage creativity and flexibility in every aspect. This helps
-            us quickly adapt to challenges and come up with unique solutions.
-          </p>
-        </div>
-      </div>
-      {/*  */}
-      {/*  */}
-      <div id="about-item-right">
-        <div id="about-content-right">
-          <h2>Quality standards</h2>
-          <p>
-            Quality is our focus. We always do our best to ensure that all
-            products and services we provide are stable and most effective. We
-            are proud of our passionate team of teammates and are willing to
-            cooperate with you to provide the most optimal solutions. Thank you
-            for coming to us!
+            Chúng tôi khuyến khích sự sáng tạo và linh hoạt trong mọi khía cạnh.
+            Điều này có ích chúng tôi nhanh chóng thích ứng với những thách thức
+            và đưa ra những giải pháp độc đáo.
           </p>
         </div>
       </div>
       {/*  */}
     </>
   );
-}
+};
 
-export default IntroAbout
+export default IntroAbout;

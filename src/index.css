@@ -3,7 +3,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   font-family: "Lato", sans-serif;
   box-sizing: border-box;
 }
@@ -35,25 +35,45 @@ input {
   width: 150px;
 }
 #main {
-  max-width: 100%;
-  height: 720px;
   position: relative;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
-  background-image: url("./assets/banner.jpg");
+  background-image: url("./assets/background.jpg");
+  width: 100%;
+  height: 100vh;
+  padding-bottom: 3rem;
   z-index: 0;
 }
 
 #main::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Thay đổi giá trị alpha để điều chỉnh độ tối */
+  z-index: -1; /* Đặt z-index thấp hơn background để lớp màu nền nằm phía sau */
 }
+
+#main2 {
+  width: 100vw;
+  height: 725px;
+  background: #fff;
+  padding: 70px 150px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  background: url(./assets//bg3.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -165,14 +185,20 @@ nav .menu-btn,
 }
 
 #features {
-  width: 100;
-  box-sizing: border-box;
+  max-width: 100%;
+  height: 700px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-image: url("./assets/banner.jpg");
+  z-index: 0;
+  align-items: center;
   font-family: "Lato";
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 90px;
-  background-color: #fff;
 }
 #features h1 {
   color: #8b008b;
@@ -847,7 +873,7 @@ nav .menu-btn,
 .service {
   position: relative;
   padding: 90px 0 40px;
-  background: url(/src/assets/service.jpg) no-repeat center fixed;
+  background: url(/src/assets/background.jpg) no-repeat center fixed;
   color: #fff;
   background-size: cover;
   height: 100%;
@@ -903,7 +929,6 @@ nav .menu-btn,
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 400;
-  text-decoration: underline;
 }
 .service-item h2 span {
   font-weight: 700;
@@ -946,7 +971,6 @@ nav .menu-btn,
   margin-bottom: 30px;
   font-size: 24px;
   font-weight: 400;
-  text-decoration: underline;
 }
 .service-item2 h2 span {
   font-weight: 700;
@@ -960,6 +984,48 @@ nav .menu-btn,
   font-size: 18px;
 }
 .service-item2 ul li p {
+  opacity: 70%;
+}
+
+.service-item4 {
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: calc(50% - 25px);
+  margin-bottom: 50px;
+  padding: 63px;
+  background-color: rgb(0 0 0 / 50%);
+  margin-left: 50px;
+}
+.service-item4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: calc(100% - 66px);
+  height: calc(100% - 66px);
+  border: 3px double #fff;
+}
+.service-item4 h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 400;
+}
+.service-item4 h2 span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.service-item4 ul {
+  list-style: none;
+  position: relative;
+}
+.service-item4 ul li span {
+  font-size: 18px;
+}
+.service-item4 ul li p {
   opacity: 70%;
 }
 

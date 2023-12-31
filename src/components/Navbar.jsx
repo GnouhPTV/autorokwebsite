@@ -1,7 +1,7 @@
-import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { MDBBtn, MDBIcon } from "mdb-react-ui-kit";
 import logo from "../assets/logo.png";
 
 function Navbar() {
@@ -31,9 +31,10 @@ function Navbar() {
     i18n.changeLanguage(language);
     setIsLanguageDropdownOpen(false);
   };
+
   return (
     <nav className={nav ? "nav active" : "nav"}>
-      <Link to="#" className="logo">
+      <Link to="/" className="logo">
         <img src={logo} alt="" />
       </Link>
 
@@ -54,6 +55,7 @@ function Navbar() {
 
         <li>
           <Link to="/intro">{t("Introduction")}</Link>
+          <Link to="/intro">{t("Introduction")}</Link>
         </li>
 
         {/* <li>
@@ -66,7 +68,8 @@ function Navbar() {
           <Link to="/other">{t("other")}</Link>
         </li>
 
-        <li>
+        
+        {/* <li>
           <MDBBtn
             outline
             className="m-1"
@@ -99,7 +102,7 @@ function Navbar() {
               </li>
             </ul>
           )}
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
